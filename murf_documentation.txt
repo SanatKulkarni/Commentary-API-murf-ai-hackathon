@@ -1,0 +1,57 @@
+Text to Speech Playground
+Try out our text-to-speech AI model in just a few lines of code. The code will be updated based on your selection.
+
+In this experiential elearning module, you’ll master the basics of using this Text to Speech widget. Choose a voice, experiment with styles, explore languages, customize text, and play with various use-cases for a view into all that Murf offers.
+Google Colab
+
+
+from murf import Murf
+
+client = Murf(api_key="YOUR_API_KEY")
+
+response = client.text_to_speech.generate(
+  text = "In this experiential elearning module, you’ll master the basics of using this Text to Speech widget. Choose a voice, experiment with styles, explore languages, customize text, and play with various use-cases for a view into all that Murf offers.",
+  voice_id = "en-US-natalie"
+)
+
+print(response.audio_file)
+
+
+i want to use 2 voices
+
+for the funny voice i want to use this one:
+from murf import Murf
+
+client = Murf(api_key="YOUR_API_KEY")
+
+response = client.text_to_speech.generate(
+  text = "In this experiential elearning module, you’ll master the basics of using this Text to Speech widget. Choose a voice, experiment with styles, explore languages, customize text, and play with various use-cases for a view into all that Murf offers.",
+  voice_id = "en-US-ken",
+  style = "Clown",
+  pitch = 9,
+  rate = 50
+)
+
+print(response.audio_file)
+
+
+
+
+and for the informative voice i want to use this one:
+
+from murf import Murf
+
+client = Murf(api_key="YOUR_API_KEY")
+
+response = client.text_to_speech.generate(
+  text = "In this experiential elearning module, you’ll master the basics of using this Text to Speech widget. Choose a voice, experiment with styles, explore languages, customize text, and play with various use-cases for a view into all that Murf offers.",
+  voice_id = "bn-IN-abhik",
+  style = "Conversational",
+  pitch = 0,
+  rate = 10,
+  multi_native_locale = "en-IN"
+)
+
+print(response.audio_file)
+
+

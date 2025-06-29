@@ -1,0 +1,9 @@
+ken
+clown
+speed=+50%
+
+
+Abhik 
+conversational
+pitch-0%
+speed=+10%

@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# PyCharm & IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Flask
+instance/
+.webassets-cache
+
+# Project specific
+audio_output/
+*.mp3
+*.mp4
+*.wav
+*.m4a
+commentary_output.json
+combined_commentary.mp3
+
+# Logs
+*.log
+logs/
+
+# API Keys & Sensitive data
+.env
+*.pem
+*.key
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache directories
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
